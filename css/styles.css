@@ -139,6 +139,14 @@ body {
     line-height: 1.8;
 }
 
+#testimonials {
+    font-style: italic;
+}
+
+#testimonials p:nth-chlid(2) {
+    margin-top: 25px;
+}
+
 
 /* END FOOTER */
 
@@ -192,6 +200,55 @@ body {
     opacity: 0.8;
 }
 
+/*********  End HOME PAGE  *********/
+
+/**** MENU CATEGERIES PAGE ****/
+
+.category-tile {
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/*
+-webkit-box-shadow: 0px 0px 7px 10px rgba(5,5,5,0.8);
+-moz-box-shadow: 0px 0px 7px 10px rgba(5,5,5,0.8);
+box-shadow: 0px 0px 7px 10px rgba(5,5,5,0.8);
+
+
+*/
+
+
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+
+}
+
+#menu-categories-title + div {
+
+  margin-bottom: 50px;
+
+}
+
+
+/**** END MENU CATEGERIES PAGE ****/
+
 @media (min-width: 1200px) {
     .container .jumbotron {
         background: url('../images/jumbotron_1200.jpg') no-repeat;
@@ -230,7 +287,7 @@ body {
 }
 
 
-/* Extra small device only */
+/**************** Extra small device only ******************/
 
 @media (max-width:767px) {
     /* Header  */
@@ -238,8 +295,8 @@ body {
         padding-top: 10px;
         height: 80px;
     }
-    /* Restaurant name 1vw = 1% of viewport width */
     .navbar-brand h1 {
+        /* Restaurant name 1vw = 1% of viewport width */
         padding-top: 10px;
         font-size: 5vw;
     }
@@ -275,6 +332,28 @@ body {
         letter-spacing: .1em;
         text-transform: uppercase;
     }
+    /* End Header */
+
+
+    /*  Footer */
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .panel-footer section:nth-child(3) {
+      margin-bottom: 0; /* margin already exists on the whole row  */
+    }
+
+    .panel-footer section hr {
+      width: 50%;
+    }
+
+    /*  End Footer */
+
+
+
+    /* Home page */
     .container .jumbotron {
         margin-top: 30px;
         padding: 0;
@@ -286,6 +365,10 @@ body {
     }
 }
 
+
+
+/********   Super Extra Small Devices Only :-) (e.g., iphone 4)   ********/
+
 @media (max-width: 479px) {
     .navbar-brand h1 {
         padding-top: 5px;
@@ -296,4 +379,15 @@ body {
         width: 280px;
         margin: 0 auto 15px;
     }
+
+    .col-xxs-12 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      width: 100%;
+
+    }
+
 }
