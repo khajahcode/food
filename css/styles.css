@@ -421,6 +421,26 @@ box-shadow: 0px 0px 7px 10px rgba(5,5,5,0.8);
         width: 360px;
         margin: 0 auto 15px;
     }
+
+
+    .menu-item-photo {
+        margin-right: auto;
+        
+    }
+
+    .menu-item-tile .menu-item-price{
+        text-align: center;
+    }
+    
+    .menu-item-description {
+        text-align: center;        
+    }
+
+
+
+
+
+
 }
 
 
